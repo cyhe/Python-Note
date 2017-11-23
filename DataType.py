@@ -3,16 +3,19 @@
 
 # 字符串
 print('hello world')
+
 # 整数
 print(1)
+
 # 浮点数
 print(1.23)
+
 # 转移字符  \n 换行 \t制表符  \\ --> \
 print("字符串中添加\'单引号\'并输出")
 print("字符串中添加\"单引号\"并输出")
+
 # 布尔值
 print('布尔值输出:', 3 > 5)
-
 # 布尔值可以用and与运算 or或运算  not运算
 score = 98
 if score > 60:
