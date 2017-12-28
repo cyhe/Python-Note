@@ -2,7 +2,7 @@
 
 ### 基础:
 
-* 工欲善其事必先利其器(./Base/install.md)
+* [工欲善其事必先利其器](./Base/install.md)
 * [数据类型](./Base/1.1_DataType.py)
 * [基本运算](./Base/1.2_Operation.py)
 * [字符串](./Base/1.3_String.py)
