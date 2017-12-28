@@ -1,4 +1,6 @@
-# list是一种有序的集合，可以随时添加和删除其中的元素。
+# -*- coding: utf-8 -*-
+
+# # list是一种有序的集合，可以随时添加和删除其中的元素。
 
 workmates = ['jack', 'steve', 'boers']
 print(workmates)
@@ -7,6 +9,7 @@ print('取出下标为1的元素', workmates[1])
 # 取出最后一个元素还可以直接取-1  负号表示倒数 ,倒数第一(-1),倒数第二个(-2)
 print('取出最后一个的元素', workmates[-1])
 # 数组越界
+
 """
  print('取出下标为-1的元素', workmates[3])
  Traceback (most recent call last):
@@ -36,6 +39,20 @@ workmates[1] = 'michel'
 list = ['list', 123456, True]
 print(list)
 
+# list也支持索引和切片
+print('切片后:', list[1:3])
+# [123456, True]
+
+#  删除操作
+list[1:3] = []
+print('删除后:', list)
+
+# 判断值是否存在列表中
+a = 'list' in list
+print(a) # True
+b = 20 in list
+print(b) # False
+
 # list的元素可以是一个list 相当于二维数组
 fruits = ['apple', 'orange', ['redPitaya', 'whitePitaya'], 'Grape']
 print(fruits)
@@ -57,8 +74,9 @@ t2 = ('a', 'b', ['A', 'B'])
 t2[2][0] = 'X'
 t2[2][1] = 'Y'
 print(t2)
+"""
+tuple说不能变,但是却变了, 但变的不是tuple的元素,而是list元素,
+tuple一开始指向list并没有改成别的list,tuple的每个元素,永远
+指向不变,之所以变了,是指向的list没变,而指向的list本身是可变的
+"""
 
-"""
-tuple说不能变,但是却变了, 但变的不是tuple的元素,而是list元素,tuple一开始指向list并没有改成别的list,tuple的每个元素,永远
-# 指向不变,之所以变了,是指向的list没变,而指向的list本身是可变的
-"""
